@@ -1,0 +1,17 @@
+<h1>Listing all Students</h1>
+
+<%= form_tag student_details_path, :method => 'get', :id => "studentnames_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :stufirName => nil %>
+  </p>
+  <div id="studentnames"><%= render 'studentnames' %></div>
+<% end %>
+
+<%= link_to 'New Student detail', new_student_detail_path %>
+
+<br>
+<br>
+#|TODO - need to fix delete action not destroying objects
+<br>
+#|TODO - FIX UP CSS TO SHOW UP AND DOWN ARROW GIF

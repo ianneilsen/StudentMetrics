@@ -1,0 +1,28 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="studenttable">
+  <tr>
+    <th><%= sortable "stufirName","Student First Name" %> |</th>
+    <th><%= sortable "stusurName","Student Surname" %> |</th>
+    <th><%= sortable "dob","Date of Birth" %>|</th>  
+    <th><%= sortable "stunum","Student Special Number" %>|</th>
+    <th>Student Picture |</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @student_details.each do |student_detail| %>
+  <tr>
+    <td><%= student_detail.stufirName %></td>
+    <td><%= student_detail.stusurName %></td>
+    <td><%= student_detail.dob %></td>
+    <td><%= student_detail.stunum %></td>
+    <td><%= image_tag student_detail.stupic_url(:thumb1).to_s %></td>
+    <td><%= link_to 'Show', student_detail %></td>
+    <td><%= link_to 'Edit', edit_student_detail_path(student_detail) %></td>
+    <td><%= link_to 'Destroy', student_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @student_details %>

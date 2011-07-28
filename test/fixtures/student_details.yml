@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stufirName: MyString
+  stusurName: MyString
+  DateOb: 2011-07-22
+  stunum: MyString
+  stupic: MyString
+
+two:
+  stufirName: MyString
+  stusurName: MyString
+  DateOb: 2011-07-22
+  stunum: MyString
+  stupic: MyString

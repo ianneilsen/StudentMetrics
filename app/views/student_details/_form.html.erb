@@ -1,0 +1,38 @@
+<%= form_for @student_detail, :html => {:multipart => true} do |f| %>
+  <% if @student_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student_detail.errors.count, "error") %> prohibited this student_detail from being saved:</h2>
+
+      <ul>
+      <% @student_detail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Student_First_Name %><br />
+    <%= f.text_field :stufirName %>
+  </div>
+  <div class="field">
+    <%= f.label :Student_Surname %><br />
+    <%= f.text_field :stusurName %>
+  </div>
+  <div class="field">
+    <%= f.label :Date_of_Birth %><br />
+    <%= f.date_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :Student_Special_Number %><br />
+    <%= f.text_field :stunum %>
+  </div>
+ #todo removed student special number field from edit mode
+  <div class="field">
+    <%= f.label :Student_Picture %><br /> 
+    <%= f.file_field :stupic %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

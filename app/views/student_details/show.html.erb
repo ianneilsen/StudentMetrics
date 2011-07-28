@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student First Name:</b>
+  <%= @student_detail.stufirName %>
+</p>
+
+<p>
+  <b>Student Surname:</b>
+  <%= @student_detail.stusurName %>
+</p>
+
+<p>
+  <b>Date of Birth:</b>
+  <%= @student_detail.dob %>
+</p>
+
+<p>
+  <b>Student Special Number:</b>
+  <%= @student_detail.stunum %>
+</p>
+
+<p>
+  <b>Student Picture:</b>
+  <%= image_tag @student_detail.stupic_url(:thumb).to_s %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_detail_path(@student_detail) %> |
+<%= link_to 'Back', student_details_path %>

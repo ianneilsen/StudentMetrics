@@ -1,0 +1,18 @@
+*********************************************************************************
+
+StudentMetrics
+
+Academic Reporting meets Business Intelligence via Rails 3 and AJAX
+
+StudentMetrics  supplies schools with a data repository to upload academic
+data from various sources and apply BI and KPI's to the academic results.
+
+The tools provide proactive dashboards for students, classes, year groups,
+schools and teachers.
+
+Reports are able to be printed and used as end of year.
+
+Students are able to be transferred between schools prior to starting to
+allow new schools to actively review the students prior to starting
+
+Students can their full school scores with them for life. 
