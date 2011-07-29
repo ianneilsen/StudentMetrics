@@ -1,10 +1,18 @@
 # SQLite version 3.x
 #   gem install sqlite3
+#development:
+  #adapter: sqlite3
+  #database: db/development.sqlite3
+  #pool: 5
+  #timeout: 5000
+  
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  database: stumetdev
+  encoding: unicode
   pool: 5
   timeout: 5000
+  username: stumetdev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,3 +28,5 @@ production:
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+#xxx|TODO -- set production and test databases to postgresql following final sets of data models built

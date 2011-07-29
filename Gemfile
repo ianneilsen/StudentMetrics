@@ -7,6 +7,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem "will_paginate", "~> 3.0.pre4"
 #gem 'thinking-sphinx', '2.0.3'# search engine for form search in app. remove basic search and replace with sphinx - needs postgresql
+gem 'pg'
 
 
 # Bundle edge Rails instead:
