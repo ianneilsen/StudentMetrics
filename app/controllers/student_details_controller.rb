@@ -87,7 +87,7 @@ class StudentDetailsController < ApplicationController
   private
   
   def sort_column
-    StudentDetail.column_names.include?(params[:sort]) ? params[:sort] : "stufirName"
+    StudentDetail.column_names.include?(params[:sort]) ? params[:sort] : "stufirname"
   end
   
   def sort_direction

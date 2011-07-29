@@ -3,7 +3,7 @@
 <%= form_tag student_details_path, :method => 'get', :id => "studentnames_search" do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :stufirName => nil %>
+    <%= submit_tag "Search", :stufirname => nil %>
   </p>
   <div id="studentnames"><%= render 'studentnames' %></div>
 <% end %>

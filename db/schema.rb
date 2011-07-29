@@ -10,16 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110722130331) do
+ActiveRecord::Schema.define(:version => 20110729123848) do
 
   create_table "student_details", :force => true do |t|
-    t.string   "stufirName"
-    t.string   "stusurName"
+    t.string   "stufirname"
+    t.string   "stusurname"
     t.date     "dob"
     t.string   "stunum"
     t.string   "stupic"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "tutorgrp"
   end
 
 end
