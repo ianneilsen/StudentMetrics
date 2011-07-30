@@ -67,3 +67,9 @@ div.field, div.actions {
 .studenttable th .desc {
   background-image: url(/images/down_arrow.gif);
 }
+.studenttable .even_row{
+  background-color: #6699FF
+}
+.studenttable .odd_row{
+  background-color: #FFF
+}

@@ -1,10 +1,10 @@
 $(function() {
-  $("#studentnames th a, #studentnames .pagination a").live("click", function() {
+  $("#studetails th a, #studetails.pagination a").live("click", function() {
     $.getScript(this.href);
     return false;
   });
-  $("#studentnames_search input").keyup(function() {
-    $.get($("#studentnames_search").attr("action"), $("#studentnames_search").serialize(), null, "script");
+  $("#studetails_search input").keyup(function() {
+    $.get($("#studetails_search").attr("action"), $("#studetails_search").serialize(), null, "script");
     return false;
   });
 });

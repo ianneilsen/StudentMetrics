@@ -1,17 +1,23 @@
-<h1>Listing all Students</h1>
+<h1>Current Student List</h1>
 
-<%= form_tag student_details_path, :method => 'get', :id => "studentnames_search" do %>
+<%= form_tag student_details_path, :remote => true, :method => 'get', :html => {:id => "studetails_search"} do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :stufirname => nil %>
   </p>
-  <div id="studentnames"><%= render 'studentnames' %></div>
+  <div id="studetails"><%= render 'studetails' %></div>
 <% end %>
 
 <%= link_to 'New Student detail', new_student_detail_path %>
 
 <br>
 <br>
-#|TODO - need to fix delete action not destroying objects
+#TODO - need to fix delete action not destroying objects - not sure why, button_to works, but not delete with jquery running maybe running
 <br>
-#|TODO - FIX UP CSS TO SHOW UP AND DOWN ARROW GIF
+#TODO -  fix up search - needs to clear after each search and return result regardless of position. jquery search not working why??
+<br>
+#TODO - search needs refining - is searching by case sensitive, needs to search regardless of case sensitivty of name
+<br>
+#todo - do not allow spaces in first name or surname, causes issues
+<br>
+#todo - if one of the names does not have an uppercase letter the special student number is not being created

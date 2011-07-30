@@ -76,7 +76,7 @@ class StudentDetailsController < ApplicationController
   # DELETE /student_details/1.xml
   def destroy
     @student_detail = StudentDetail.find(params[:id])
-    @student_detail.destroy
+    @student_detail.delete
 
     respond_to do |format|
       format.html { redirect_to(student_details_url) }
